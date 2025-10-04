@@ -5,7 +5,7 @@
  */
 
 function minWindowSubstring(s, t) {
-  if (t.length > s.length) return ""
+  if (t.length > s.length) return ''
 
   const need = {}
   for (let char of t) {
@@ -36,7 +36,7 @@ function minWindowSubstring(s, t) {
     }
   }
 
-  return minLen === Infinity ? "" : s.substring(minStart, minStart + minLen)
+  return minLen === Infinity ? '' : s.substring(minStart, minStart + minLen)
 }
 
 export { minWindowSubstring }
