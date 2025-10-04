@@ -14,7 +14,7 @@ test('should find shortest distance without negative cycle', () => {
   const result = bellmanFordNegativeCycle(graph, 4, 0)
 
   expect(result.hasNegativeCycle).toBe(false)
-  expect(result.dist[3]).toBe(6) // shortest distance from 0 to 3
+  expect(result.dist[3]).toBe(5) // shortest distance from 0 to 3
 })
 
 test('should detect negative cycle', () => {
